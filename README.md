@@ -1,23 +1,44 @@
-## How to install reactstrap correctly?
+# Quick guidance for installing reactstrap in React
 
-1. Install create-react-app (Short instruction)
-`npm install -g create-react-app`
-`create-react-app my-app`
-`cd my-app`
-`npm start`
+The procedures of installing reactstrap can sometimes be confusing. This guidance is for the developers we want to install reactstrap quickly to their React projects. The `App.js` file in this repo shows a navigation bar of reactstrap / Bootstrap.
 
-2. NPM - Install reactstrap and peer dependencies via NPM
-`npm install --save reactstrap react react-dom` 
+Let's start!
 
-3. Adding Bootstrap
-`npm install bootstrap --save`
-`npm install --save reactstrap react react-dom`
-Import Bootstrap CSS in the `src/index.js` file:
-`import 'bootstrap/dist/css/bootstrap.min.css';`
-Import required reactstrap components within `src/App.js` file or your custom component files:
-`import {Element} from 'reactstrap';`
+## 1. Install create-react
 
-Courtesy of reactstrap https://reactstrap.github.io/
+- Run `npm install -g create-react-app`.
+- Run `create-react-app my-app`.
+- Run `cd my-app`.
+- Run `npm start`. (Alternatively, you can skip it and execute it at Step 4.)
+
+## 2. Install reactstrap and peer dependencies via NPM
+
+Run `npm install --save reactstrap react react-dom
+
+(You can open another terminal if you skip running `npm start`.)
+
+## 3. Install Bootstrap
+
+- Run `npm install bootstrap --save`.
+- Run `npm install --save reactstrap react react-dom`.
+- Import Bootstrap CSS to `src/index.js`:
+
+  `import 'bootstrap/dist/css/bootstrap.min.css';`
+
+- Import the chosen reactstrap components to `src/App.js` or your custom component files:
+
+  `import {Element} from 'reactstrap';`
+
+## 4. Add reactstrap code
+
+- Visit the [reactstrap](https://reactstrap.github.io/) website and choose a component.
+- Add the code of the chosen component to your `App.js` or other files. Modify it when necessary.
+- Execute `npm start` if you skip it at Step 1.
+
+## 5. Add CDN
+
+When you deploy the web app to a server, add a Bootstrap CDN link from [here](https://cdnjs.com/libraries/react) to ensure Bootstrap works properly.
 
 
 
+Courtesy of the excellent developer **[Mr Norbert Angyal](https://github.com/nangyal)** and the [reactstrap](https://reactstrap.github.io/) website.

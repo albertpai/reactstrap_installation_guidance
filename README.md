@@ -4,19 +4,18 @@ The procedures of installing reactstrap can sometimes be confusing. This guidanc
 
 Let's start!
 
-
 ## 1. Install create-react
 
 - Run `npm install -g create-react-app`.
 - Run `create-react-app my-app`.
 - Run `cd my-app`.
-- Run `npm start`. (Alternatively, you can skip it and execute it at Step 4.)
+- Run `npm start` (Alternatively, you can skip it and execute it at Step 4).
 
 ## 2. Install reactstrap and peer dependencies via NPM
 
 Run `npm install --save reactstrap react react-dom
 
-(You can open another terminal if you skip running `npm start`.)
+(You can open another terminal if you skip running `npm start`).
 
 ## 3. Install Bootstrap
 
